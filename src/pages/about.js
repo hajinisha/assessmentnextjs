@@ -10,11 +10,13 @@ const About = ({ abouttitle, aboutcontent }) => {
   return (
     <div>
       <Head>
+         {/* Set the page title and meta description based on the current locale */}
         <title>{locale === 'ar' ? ar.meta.title2 : en.meta.title2}</title>
         <meta name="description" content={locale === 'ar' ? ar.meta.description2 : en.meta.description2} />
       </Head>
       <div className={styles.container}>
         <div className={styles.card}>
+           {/* Display the message passed as a prop */}
           <h1>{abouttitle}</h1>
           <p>{aboutcontent}</p>
         </div>

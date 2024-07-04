@@ -21,7 +21,7 @@ const BlogPostPage = ({ post }) => {
 };
 
 export const getStaticPaths = async () => {
-  // Define paths for both English and Arabic blog posts
+  
   const paths = [
     { params: { id: 'post1' } },
     { params: { id: 'post2' } }
@@ -29,7 +29,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths,
-    fallback: true // Enable fallback for missing translations
+    fallback: true
   };
 };
 
@@ -46,10 +46,8 @@ export const getStaticProps = async ({ params, locale }) => {
     }
   };
 
-  // Ensure locale is defined
   const currentLocale = locale || 'en';
 
-  // Fetch blog post data based on the id and locale
   let post;
 
   if (params?.id === 'post1') {
@@ -66,7 +64,6 @@ export const getStaticProps = async ({ params, locale }) => {
     };
   }
 
-  // If post is undefined, fallback to default content based on currentLocale
   if (!post) {
     post = {
       id: 'fallback',

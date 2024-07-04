@@ -12,12 +12,10 @@ const Home = ({ welcomeMessage }) => {
       <Head>
         <title>{locale === 'ar' ? ar.meta.title1 : en.meta.title1}</title>
         <meta name="description" content={locale === 'ar' ? ar.meta.description1 : en.meta.description1} />
-        {/* Add other meta tags as needed */}
       </Head>
       <div className={styles.container}>
         <div className={styles.card}>
           <h1>{welcomeMessage}</h1>
-          {/* Page content here */}
         </div>
       </div>
     </div>

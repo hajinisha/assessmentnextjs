@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+
 import en from '../../../locales/en.json'; 
 import ar from '../../../locales/ar.json'; 
 

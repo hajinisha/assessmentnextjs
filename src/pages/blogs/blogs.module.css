@@ -1,0 +1,29 @@
+.card {
+    background-color: #DFE1E0 ;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 900px;
+    min-height: 300px; 
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white; 
+    padding-top: 20px; 
+  }
+  
+
+
+.underline {
+  text-decoration: underline;
+}

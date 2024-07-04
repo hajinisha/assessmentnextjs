@@ -1,0 +1,42 @@
+/* src/components/Header.module.css */
+.header {
+    background-color:#ACF1C0 ;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: perspective(1000px) rotateX(10deg);
+    transform-style: preserve-3d;
+  }
+  
+  .nav {
+    display: flex;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navItem {
+    margin: 0 15px;
+  }
+  
+  .navLink {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navLink:hover {
+    color: #0366d6;
+    transform: translateZ(10px);
+  }
+  .rtl {
+    direction: rtl; 
+  }
+  

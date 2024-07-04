@@ -1,23 +1,22 @@
-import Head from 'next/head'
 import { useRouter } from 'next/router'
 import en from '../locales/en.json'
 import ar from '../locales/ar.json'
+import Head from 'next/head'
 import styles from './home.module.css'
 
-const Home = ({ welcomeMessage }) => {
+const About = ({ abouttitle, aboutcontent }) => {
   const { locale } = useRouter()
 
   return (
     <div>
       <Head>
-        <title>{locale === 'ar' ? ar.meta.title1 : en.meta.title1}</title>
-        <meta name="description" content={locale === 'ar' ? ar.meta.description1 : en.meta.description1} />
-        {/* Add other meta tags as needed */}
+        <title>{locale === 'ar' ? ar.meta.title2 : en.meta.title2}</title>
+        <meta name="description" content={locale === 'ar' ? ar.meta.description2 : en.meta.description2} />
       </Head>
       <div className={styles.container}>
         <div className={styles.card}>
-          <h1>{welcomeMessage}</h1>
-          {/* Page content here */}
+          <h1>{abouttitle}</h1>
+          <p>{aboutcontent}</p>
         </div>
       </div>
     </div>
@@ -29,9 +28,10 @@ export const getStaticProps = async ({ locale }) => {
 
   return {
     props: {
-      welcomeMessage: translations.welcomeMessage
+      abouttitle: translations.abouttitle,
+      aboutcontent: translations.aboutcontent
     }
   }
 }
 
-export default Home
+export default About

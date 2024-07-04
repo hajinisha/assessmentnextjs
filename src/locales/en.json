@@ -1,0 +1,20 @@
+
+{
+    "meta": {
+      "title1": "Home",
+      "description1": "Home page",
+       "title2": "About",
+      "description2": "About page",
+       "title3": "Blogs",
+      "description3": "Blogs page"
+    },
+     "home": "Home",
+     "about": "About Us",
+      "welcomeMessage": "Welcome to our website.",
+      "abouttitle": "About Us ",
+      "aboutcontent": "We are a company committed to delivering high-quality products.",
+      "Blogs": "Blogs",
+      "post1": "First Post",
+      "post2": "Second Post"
+    }
+    
